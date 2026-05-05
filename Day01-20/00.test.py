@@ -1,11 +1,3 @@
-##  时间轴
-2026年4月19日 学习01 02 03 04 
-
-2026年5月5日  创建代码库方便不同设备切换学习，同步保存学习记录
-
-
-###  手写的代码
-```python
 Height= float(input("请输入你的身高（米）"))
 Weight= float(input("请输入你的体重（千克）"))
 BMI = Weight / (Height ** 2)
@@ -20,5 +12,3 @@ else:
 print(f"你的bmi是:{BMI:.1f}")
 # print(f'{bmi = :.1f}')
 # print("你的BMI是：", BMI)
-```
-> **注意**：推荐使用 f-string写法✔ 可读性最好✔ 写法最简洁✔ 支持复杂表达式    f"xxxx"：格式化字符串   {BMI:.1F}：保留变量的1位小数 
