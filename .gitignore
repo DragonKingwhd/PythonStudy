@@ -1,0 +1,21 @@
+venv
+.idea
+*.pyc
+__pycache__
+
+### VisualStudioCode ###
+.vscode/*
+.vscode/**
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+###忽略非学习内容文件夹###
+公开课/
+番外篇/
+res/
