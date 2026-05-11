@@ -1,7 +1,5 @@
-status_code = int(input("显示代码："))
-match status_code:
-    case 101: description = "不及格"
-    case 102: description = "及格"
-    case 103: description = "差一点及格"
-    case _: description = '未知代码 请联系管理员'
-print('状态码描述：',description)
+for i in range(0,21):
+    for k in range (0,34):
+        z = 100-i-k
+        if 5 * i + 3 * k + z/3 == 100 and z % 3 ==0 :
+            print(f"{i},{k},{z}")
