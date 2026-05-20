@@ -97,6 +97,7 @@ print(torch.transpose(torch_tensor3d, 0, 2).shape)
 import timeit
 x = torch.rand(2**11, 2**11)
 time_cpu = timeit.timeit("x@x", globals=globals(), number=100)
+print(f"CPU 100 次矩阵乘耗时: {time_cpu:.4f} s")
 
 # ====== 单元 17 (代码) ======
 print("Is CUDA available? :", torch.cuda.is_available())
@@ -105,6 +106,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # ====== 单元 18 (代码) ======
 x = x.to(device)
 time_gpu = timeit.timeit("x@x", globals=globals(), number=100)
+print(f"GPU 100 次矩阵乘耗时: {time_gpu:.4f} 秒")
+print(f"加速比: {time_cpu / time_gpu:.2f}x")
 
 # ====== 单元 19 (代码) ======
 def moveTo(obj, device):
